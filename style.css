@@ -80,12 +80,22 @@ h4 {
   padding: 0.2rem 0;
   border-bottom: 0.2rem solid var(--primary-color);
   margin-bottom: 1.2rem;
+  transform: translateX(-300%);
+  transition: transform 0.2s ease-in;
+}
+
+.show {
+  transform: translateX(0);
 }
 
 .tag {
   border-radius: 0.5rem;
   display: inline-block;
   padding: 0.3rem 0.6rem;
+}
+
+.tag:last-child {
+  margin-left: 0.2rem;
 }
 
 .culture {
@@ -101,36 +111,61 @@ h4 {
   background-color: rgba(244, 213, 141, 0.75);
 }
 
-/* Navbar */
+.experience {
+  background-color: rgba(141, 8, 1, 0.5);
+}
 
+.nature {
+  background-color: #708d81;
+}
+
+/* Navbar */
 .navbar {
   width: 100%;
   height: 10rem;
   background-color: var(--primary-color);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
 }
 
 .navbar .wrapper {
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   width: 10rem;
-  height: 8rem;
+  height: 10rem;
 }
 
 .nav-links a {
   color: var(--white-color);
-  padding: 0 2rem;
+  margin: 0 2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  width: 0;
+  height: 120%;
+  border-bottom: 0.1rem solid white;
+  position: absolute;
+  bottom: -0.8rem;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a:active::after {
+  width: 100%;
 }
 
 /* Hero */
@@ -306,7 +341,7 @@ h4 {
   padding: 6rem 0;
   width: 100%;
   height: auto;
-  background-color: rgba(244, 213, 141, 0.75);
+  background-color: rgba(244, 213, 141, 0.25);
 }
 
 .packages-wrapper {
@@ -455,20 +490,109 @@ h4 {
   position: relative;
 }
 
-.footer .wrapper {
-  width: 100%;
+.footer .footer-wrapper {
+  width: 90%;
   height: 100%;
-  display: flex;
-  align-items: center;
+  margin-left: auto;
 }
 
-.logo {
+.footer-logo {
+  width: 10rem;
   position: absolute;
   bottom: 5rem;
   left: 5rem;
 }
 
-.sitemap {
+.footer-content-wrapper {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  height: 100%;
+  padding: 2rem 3rem;
+}
+
+.subscription-wrapper {
+  width: 50%;
+}
+
+.footer-content > *,
+.sitemap-links a {
+  color: var(--white-color);
+  font-size: 1.2rem;
+}
+
+.sitemap-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.sitemap-title {
+  margin: 1.2rem 0;
+}
+
+.sitemap-link {
+  padding: 0.3rem 0;
+}
+
+.subscription-text {
+  padding: 1rem 0;
+  color: var(--light-color);
+}
+
+input {
+  width: 60%;
+  padding: 1rem 0.4rem;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: rgba(184, 184, 184, 0.25);
+}
+
+input::placeholder {
+  color: rgba(0, 20, 39, 0.5);
+}
+
+.input-wrapper {
+  margin-top: 0.2rem;
+  display: flex;
+}
+
+.input-wrapper .secondary-btn {
+  width: 30%;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+}
+
+.company-info {
+  padding: 0.2rem 0;
+}
+
+.social-media-link i {
+  width: 3rem;
+  height: 3rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.copyright {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+}
+
+/* .sitemap {
   height: 100%;
   width: 30%;
   display: flex;
@@ -491,3 +615,23 @@ h4 {
 .sitemap-link {
   padding: 0.4rem 0;
 }
+
+.subscription-wrapper {
+  background-color: green;
+  width: 30%;
+  height: 100%;
+}
+
+.contact-wrapper {
+  background-color: aqua;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-medias {
+  width: 30%;
+  height: 100%;
+  background-color: pink;
+} */

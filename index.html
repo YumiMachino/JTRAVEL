@@ -14,6 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800;900&family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>JTRAVEL</title>
   </head>
   <body>
@@ -52,8 +58,8 @@
               <img src="img/picked-1.jpg" alt="" />
             </div>
             <div class="pick-text">
-              <h4 class="pick-name">伏見稲荷</h4>
-              <p><span class="tag culture">文化</span></p>
+              <h4 class="pick-name">Fushimi Inari Shrine, Kyoto</h4>
+              <p><span class="tag culture">Culture</span></p>
               <button class="btn secondary-btn">See More</button>
             </div>
           </div>
@@ -62,8 +68,8 @@
               <img src="img/picked-2.jpg" alt="" />
             </div>
             <div class="pick-text">
-              <h4 class="pick-name">伏見稲荷</h4>
-              <p><span class="tag culture">文化</span></p>
+              <h4 class="pick-name">Shibuya, Tokyo</h4>
+              <p><span class="tag experience">Experience</span></p>
               <button class="btn secondary-btn">See More</button>
             </div>
           </div>
@@ -72,8 +78,8 @@
               <img src="img/picked-3.jpg" alt="" />
             </div>
             <div class="pick-text">
-              <h4 class="pick-name">伏見稲荷</h4>
-              <p><span class="tag culture">文化</span></p>
+              <h4 class="pick-name">Osaka</h4>
+              <p><span class="tag food">Food</span></p>
               <button class="btn secondary-btn">See More</button>
             </div>
           </div>
@@ -82,8 +88,8 @@
               <img src="img/picked-4.jpg" alt="" />
             </div>
             <div class="pick-text">
-              <h4 class="pick-name">伏見稲荷</h4>
-              <p><span class="tag culture">文化</span></p>
+              <h4 class="pick-name">Furano, Hokkaido</h4>
+              <p><span class="tag nature">Nature</span></p>
               <button class="btn secondary-btn">See More</button>
             </div>
           </div>
@@ -92,8 +98,11 @@
               <img src="img/picked-5.jpg" alt="" />
             </div>
             <div class="pick-text">
-              <h4 class="pick-name">伏見稲荷</h4>
-              <p><span class="tag culture">文化</span></p>
+              <h4 class="pick-name">Cuisine</h4>
+              <p>
+                <span class="tag food">Food</span
+                ><span class="tag culture">Culture</span>
+              </p>
               <button class="btn secondary-btn">See More</button>
             </div>
           </div>
@@ -194,39 +203,51 @@
     </section>
 
     <footer class="footer">
-      <div class="wrapper">
-        <div class="logo">
+      <div class="footer-wrapper">
+        <div class="footer-logo">
           <img src="img/JTRAVEL-logo-white.png" alt="" />
         </div>
-        <div class="sitemap">
-          <h5 class="sitemap-title">Sitemap</h5>
-          <div class="sitemap-links">
-            <a href="#" class="sitemap-link">Home</a>
-            <a href="#" class="sitemap-link">Explore</a>
-            <a href="#" class="sitemap-link">About</a>
-            <a href="#" class="sitemap-link">Blog</a>
-            <a href="#" class="sitemap-link">Contact</a>
+        <div class="footer-content-wrapper">
+          <div class="footer-content sitemap">
+            <h5 class="sitemap-title">Sitemap</h5>
+            <div class="sitemap-links">
+              <a href="#" class="sitemap-link">Home</a>
+              <a href="#" class="sitemap-link">Explore</a>
+              <a href="#" class="sitemap-link">About</a>
+              <a href="#" class="sitemap-link">Blog</a>
+              <a href="#" class="sitemap-link">Contact</a>
+            </div>
           </div>
-        </div>
 
-        <div class="subscription-wrapper">
-          <h5 class="sitemap-title">Subscribe Us</h5>
-          <label>Email</label>
-          <input type="text" placeholder="Enter your Email" />
-          <button class="btn secondary-btn">Subscribe</button>
-        </div>
+          <div class="footer-content subscription-wrapper">
+            <h5 class="sitemap-title">Subscribe Us</h5>
+            <p class="subscription-text">
+              Enter your email to get promotions now!
+            </p>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Enter your Email" />
+              <button class="btn secondary-btn">Subscribe</button>
+            </div>
+          </div>
 
-        <div class="contact-wrapper">
-          <h5 class="sitemap-title">Need Help?</h5>
-          <p class="company-info">address</p>
-          <p class="company-info">Phone Number</p>
-        </div>
+          <div class="footer-content contact-wrapper">
+            <h5 class="sitemap-title">Need Help?</h5>
+            <p class="company-info">Lorem ipsum dolor sit amet.</p>
+            <p class="company-info">XXX-XX-XXXX</p>
+          </div>
 
-        <div class="social-medias">
-          <h5 class="sitemap-title">Social Media</h5>
-          <a href="#"><i class="fab fa-twitter-square"></i></a>
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <div class="footer-content social-medias">
+            <h5 class="sitemap-title">Social Media</h5>
+            <a href="#" class="social-media-link"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+            <a href="#" class="social-media-link"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a href="#" class="social-media-link"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
         </div>
       </div>
       <p class="copyright">Designed and developed by Yumi Machino.</p>
