@@ -20,6 +20,10 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <title>JTRAVEL</title>
   </head>
   <body>
@@ -51,7 +55,7 @@
     <!-- Picked Section -->
     <section class="picked">
       <div class="wrapper">
-        <h3 class="section-title">Our Picks</h3>
+        <h3 class="section-title section-title-1">Our Picks</h3>
         <div class="pick-card-wrapper">
           <div class="pick">
             <div class="img-wrapper">
@@ -113,92 +117,181 @@
     <!-- Package Section -->
     <section class="package-section">
       <div class="wrapper">
-        <h3 class="section-title">Packages for your interest</h3>
+        <h3 class="section-title section-title-2">Choose from packages</h3>
 
-        <div class="packages-wrapper">
-          <div class="package">
-            <div class="package-face package-front">
-              <div class="img-wrapper">
-                <img src="img/package-1.jpg" alt="" />
+        <div class="swiper mySwiper">
+          <div class="packages-wrapper swiper-wrapper">
+            <div class="package swiper-slide">
+              <div class="package-face package-front">
+                <div class="img-wrapper">
+                  <img src="img/package-1.jpg" alt="" />
+                </div>
+                <div class="package-text">
+                  <h4 class="package-name">Discover Japan</h4>
+                  <p class="package-paragraph">in-depth cultural experience</p>
+                </div>
               </div>
-              <div class="package-text">
-                <h4 class="package-name">Discover Japan</h4>
-                <p class="package-paragraph">in-depth cultural experience</p>
+              <div class="package-face package-back">
+                <p class="package-tags">
+                  <span class="tag place">Kyoto, Tokyo</span>
+                  <span class="tag culture">Culture</span>
+                  <span class="tag food">Food</span>
+                </p>
+                <h5 class="price">$3,900</h5>
+                <p class="term">10 days</p>
+                <button class="btn primary-btn">Check More</button>
               </div>
             </div>
 
-            <div class="package-face package-back">
-              <p class="package-tags">
-                <span class="tag place">Tokyo</span>
-                <span class="tag culture">Culture</span>
-                <span class="tag food">Food</span>
-              </p>
-              <h5 class="price">$5,900</h5>
-              <p class="term">10 days</p>
-              <button class="btn primary-btn">Check More</button>
+            <div class="package swiper-slide">
+              <div class="package-face package-front">
+                <div class="img-wrapper">
+                  <img src="img/package-2.jpg" alt="" />
+                </div>
+                <div class="package-text">
+                  <h4 class="package-name">Shibuya Walk</h4>
+                  <p class="package-paragraph">Enjoy Tokyo vibe</p>
+                </div>
+              </div>
+              <div class="package-face package-back bg-2">
+                <p class="package-tags">
+                  <span class="tag place">Tokyo</span>
+                  <span class="tag culture">Culture</span>
+                  <span class="tag food">Food</span>
+                </p>
+                <h5 class="price">$120</h5>
+                <p class="term">1 day</p>
+                <button class="btn primary-btn">Check More</button>
+              </div>
+            </div>
+
+            <div class="package swiper-slide">
+              <div class="package-face package-front">
+                <div class="img-wrapper">
+                  <img src="img/package-3.jpg" alt="" />
+                </div>
+                <div class="package-text">
+                  <h4 class="package-name">Heal in Onsen</h4>
+                  <p class="package-paragraph">Relax in Onsen, Jikoku-dani</p>
+                </div>
+              </div>
+
+              <div class="package-face package-back bg-3">
+                <p class="package-tags">
+                  <span class="tag place">Hokkaido</span>
+                  <span class="tag culture">Culture</span>
+                  <span class="tag food">Food</span>
+                </p>
+                <h5 class="price">$1,200</h5>
+                <p class="term">3 days</p>
+                <button class="btn primary-btn">Check More</button>
+              </div>
+            </div>
+
+            <div class="package swiper-slide">
+              <div class="package-face package-front">
+                <div class="img-wrapper">
+                  <img src="img/package-4.jpg" alt="" />
+                </div>
+                <div class="package-text">
+                  <h4 class="package-name">Skiing in Niigata</h4>
+                  <p class="package-paragraph">
+                    Enjoy the beautiful scenary in winter, and skiing
+                  </p>
+                </div>
+              </div>
+
+              <div class="package-face package-back">
+                <p class="package-tags">
+                  <span class="tag place">Niigata</span>
+                  <span class="tag culture">Culture</span>
+                  <span class="tag nature">Nature</span>
+                </p>
+                <h5 class="price">$500</h5>
+                <p class="term">2 days</p>
+                <button class="btn primary-btn">Check More</button>
+              </div>
+            </div>
+            <div class="package swiper-slide">
+              <div class="package-face package-front">
+                <div class="img-wrapper">
+                  <img src="img/package-5.jpg" alt="" />
+                </div>
+                <div class="package-text">
+                  <h4 class="package-name">Climb Mt.Fuji</h4>
+                  <p class="package-paragraph">Once in a lifetime experience</p>
+                </div>
+              </div>
+
+              <div class="package-face package-back bg-5">
+                <p class="package-tags">
+                  <span class="tag place">Shizuoka</span>
+                  <span class="tag experience">Experience</span>
+                  <span class="tag nature">Nature</span>
+                </p>
+                <h5 class="price">$400</h5>
+                <p class="term">2 days</p>
+                <button class="btn primary-btn">Check More</button>
+              </div>
             </div>
           </div>
-
-          <div class="package">
-            <div class="package-face package-front">
-              <div class="img-wrapper">
-                <img src="img/package-1.jpg" alt="" />
-              </div>
-              <div class="package-text">
-                <h4 class="package-name">Discover Japan</h4>
-                <p class="package-paragraph">in-depth cultural experience</p>
-              </div>
-            </div>
-
-            <div class="package-face package-back">
-              <p class="package-tags">
-                <span class="tag place">Tokyo</span>
-                <span class="tag culture">Culture</span>
-                <span class="tag food">Food</span>
-              </p>
-              <h5 class="price">$5,900</h5>
-              <p class="term">10 days</p>
-              <button class="btn primary-btn">Check More</button>
-            </div>
-          </div>
-
-          <div class="package">
-            <div class="package-face package-front">
-              <div class="img-wrapper">
-                <img src="img/package-1.jpg" alt="" />
-              </div>
-              <div class="package-text">
-                <h4 class="package-name">Discover Japan</h4>
-                <p class="package-paragraph">in-depth cultural experience</p>
-              </div>
-            </div>
-
-            <div class="package-face package-back">
-              <p class="package-tags">
-                <span class="tag place">Tokyo</span>
-                <span class="tag culture">Culture</span>
-                <span class="tag food">Food</span>
-              </p>
-              <h5 class="price">$5,900</h5>
-              <p class="term">10 days</p>
-              <button class="btn primary-btn">Check More</button>
-            </div>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
 
     <!-- Featured Section -->
-    <section class="featured-section">
-      <h3 class="featured-section-title">Featured Package</h3>
-      <div class="featured-right">
-        <h2 class="featured-title">Featured Package</h2>
-        <p class="featured-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          iusto dicta repudiandae consequuntur, itaque facilis cumque
-          necessitatibus doloribus. Doloribus, suscipit.
-        </p>
-        <button class="btn primary-btn">Check detail</button>
+    <section class="feature">
+      <div class="arrow left-arrow">
+        <i class="fas fa-arrow-circle-left"></i>
+      </div>
+      <div class="arrow right-arrow">
+        <i class="fas fa-arrow-circle-right"></i>
+      </div>
+
+      <!-- first featured-->
+      <div class="featured-section show">
+        <h3 class="featured-section-title">Featured Package</h3>
+
+        <div class="featured-right">
+          <h2 class="featured-title">Featured Package</h2>
+          <p class="featured-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit iusto dicta repudiandae consequuntur, itaque facilis
+            cumque necessitatibus doloribus. Doloribus, suscipit.
+          </p>
+          <button class="btn primary-btn">Check detail</button>
+        </div>
+      </div>
+
+      <!-- second featured-->
+      <div class="featured-section feature-bg-2">
+        <h3 class="featured-section-title">Featured Package</h3>
+
+        <div class="featured-right">
+          <h2 class="featured-title">Featured Package</h2>
+          <p class="featured-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit iusto dicta repudiandae consequuntur, itaque facilis
+            cumque necessitatibus doloribus. Doloribus, suscipit.
+          </p>
+          <button class="btn primary-btn">Check detail</button>
+        </div>
+      </div>
+
+      <!-- third featured-->
+      <div class="featured-section feature-bg-3">
+        <h3 class="featured-section-title">Featured Package</h3>
+
+        <div class="featured-right">
+          <h2 class="featured-title">Featured Package</h2>
+          <p class="featured-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit iusto dicta repudiandae consequuntur, itaque facilis
+            cumque necessitatibus doloribus. Doloribus, suscipit.
+          </p>
+          <button class="btn primary-btn">Check detail</button>
+        </div>
       </div>
     </section>
 
@@ -252,5 +345,7 @@
       </div>
       <p class="copyright">Designed and developed by Yumi Machino.</p>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
