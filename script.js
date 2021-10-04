@@ -73,3 +73,11 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
+
+const hamburger = document.querySelector(".hamburger-menu");
+const sideNav = document.querySelector(".side-nav");
+
+hamburger.addEventListener("click", () => {
+  console.log("hamburger clicked");
+  sideNav.classList.toggle("side-nav-show");
+});
