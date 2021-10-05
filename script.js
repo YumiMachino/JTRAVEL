@@ -7,6 +7,7 @@ const rightArrow = document.querySelector(".right-arrow");
 const featuredSections = document.querySelectorAll(".featured-section");
 let featureIndex = 0;
 
+// Fetured section slide image control arrows
 leftArrow.addEventListener("click", () => {
   featureIndex--;
   slideFeaturedSection();
@@ -32,9 +33,7 @@ function slideFeaturedSection() {
   ele.classList.add("show");
 }
 
-// console.log(section_titles);
-// console.log(window.innerHeight);
-
+// Smooth effect on section titles
 window.addEventListener("scroll", scrollEvent);
 
 function scrollEvent() {
@@ -57,6 +56,7 @@ function scrollEvent() {
   }
 }
 
+// Package section swiper effect
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -74,6 +74,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// Responsive side navigation control
 const hamburger = document.querySelector(".hamburger-menu");
 const sideNav = document.querySelector(".side-nav");
 
