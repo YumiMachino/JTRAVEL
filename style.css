@@ -89,7 +89,7 @@ h4 {
 }
 
 .show {
-  animation: titleSlideIn 2s forwards;
+  animation: titleSlideIn 1s forwards;
 }
 
 @keyframes titleSlideIn {
@@ -737,7 +737,6 @@ Responsive
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
   }
 
   .footer-logo {
@@ -755,6 +754,9 @@ Responsive
 }
 
 @media (max-width: 1060px) {
+  html {
+    font-size: 60%;
+  }
   .wrapper .nav-links {
     display: none;
   }
@@ -864,6 +866,103 @@ Responsive
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    left: 2rem;
+  }
+
+  .package-section {
+    padding: 0;
+    /* height: 60vh; */
+    height: auto;
+  }
+
+  .package-section .wrapper {
+    padding: 0 3rem;
+  }
+
+  .package {
+    width: 180px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .pick-card-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+  }
+
+  .picked .pick:nth-child(1),
+  .picked .pick:nth-child(2),
+  .picked .pick:nth-child(3),
+  .picked .pick:nth-child(4),
+  .picked .pick:nth-child(5) {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .picked .wrapper {
+    padding: 0 3rem;
+  }
+
+  .package {
+    width: 10rem;
+    height: 20rem;
+  }
+
+  .footer-content-wrapper .sitemap {
+    display: none;
+  }
+
+  .footer-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    width: 50%;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .social-media-link i {
+    width: 1rem;
+    padding: 0 0.2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 40%;
+  }
+  .package {
+    width: 14rem;
+    height: 26rem;
+  }
+
+  .packages-wrapper {
+    padding: 2rem 0 2rem 0;
+    perspective: 100rem;
+  }
+
+  .featured-section {
+    height: 30vh;
+    position: relative;
+  }
+
+  .featured-right {
+    width: 80%;
+    position: absolute;
+    bottom: 3rem;
     left: 2rem;
   }
 }
