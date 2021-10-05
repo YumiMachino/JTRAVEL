@@ -7,6 +7,12 @@ const rightArrow = document.querySelector(".right-arrow");
 const featuredSections = document.querySelectorAll(".featured-section");
 let featureIndex = 0;
 
+// Loading
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".loader").style.display = "none";
+  document.querySelector(".content").style.display = "block";
+});
+
 // Fetured section slide image control arrows
 leftArrow.addEventListener("click", () => {
   featureIndex--;
