@@ -144,7 +144,6 @@ h4 {
 .hamburger-menu,
 .side-nav {
   display: none;
-  visibility: none;
 }
 
 .navbar {
@@ -415,14 +414,18 @@ Pick
   display: flex;
   flex-direction: row;
   perspective: 1000rem;
+  -webkit-perspective: 1000rem;
+  -moz-perspective: 1000rem;
+  -ms-perspective: 1000rem;
 }
 
 .package {
   width: 300px !important;
   height: 400px !important;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   position: relative;
-  border-radius: 2rem;
   margin: 0 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
 }
@@ -430,7 +433,6 @@ Pick
 .package-face {
   width: 100%;
   height: 100%;
-  border-radius: 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -442,8 +444,12 @@ Pick
   justify-content: flex-end;
   text-align: end;
   transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
   position: relative;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 
 .package-text {
@@ -475,8 +481,11 @@ Pick
   justify-content: center;
   align-items: center;
   transform: rotateY(180deg);
-  border-radius: 2rem;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 
 .bg-2,
@@ -504,7 +513,6 @@ Pick
 }
 
 .package .img-wrapper img {
-  border-radius: 2rem;
   opacity: 1;
 }
 
@@ -846,7 +854,6 @@ Responsive
     padding: 0.4rem;
     margin: 1rem 0;
     position: relative;
-    transition: width 0.2s;
     font-weight: 300;
     color: var(--secondary-color);
   }
@@ -863,6 +870,7 @@ Responsive
     position: absolute;
     bottom: -0.2rem;
     left: 0;
+    transition: width 0.2s;
   }
 
   .line {
