@@ -769,31 +769,34 @@ Responsive
     top: 50%;
     transform: translateY(-50%);
     right: 2rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     /* height: 40%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     z-index: 50;
-    background-color: yellow;
   }
 
-  .icon-show .line {
+  .hamburger-menu .line {
+    transition: transform 0.2s;
+  }
+
+  .hamburger-menu.icon-show .line {
     background-color: var(--secondary-color);
-    width: 122%;
+    width: 125%;
   }
 
-  .icon-show .line-1 {
+  .hamburger-menu.icon-show .line-1 {
     transform: rotate(45deg);
     transform-origin: left;
   }
 
-  .icon-show .line-2 {
+  .hamburger-menu.icon-show .line-2 {
     display: none;
   }
 
-  .icon-show .line-3 {
+  .hamburger-menu.icon-show .line-3 {
     transform: rotate(-45deg);
     transform-origin: left;
   }

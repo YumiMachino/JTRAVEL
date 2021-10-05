@@ -80,4 +80,6 @@ const sideNav = document.querySelector(".side-nav");
 hamburger.addEventListener("click", () => {
   console.log("hamburger clicked");
   sideNav.classList.toggle("side-nav-show");
+  console.log(hamburger);
+  hamburger.classList.toggle("icon-show");
 });
