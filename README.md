@@ -9,4 +9,4 @@ A landing page website for a travel agency, which features Japan. Designed and D
 #### Design
 Started from sketching, created wireframe and logos.
 
-![](https://github.com/YumiMachino/JTRAVEL/issues/1)
+![](https://user-images.githubusercontent.com/69213242/136094454-782947a2-002c-423a-9c46-149f313e68a7.png)
